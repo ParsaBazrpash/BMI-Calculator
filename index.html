@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BMI Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <h1 class="text-center">BMI Calculator</h1>
+            <h3 class="text-center">Check your BMI</h3>
+
+            <p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+
+            <form>
+                <div id="weightInput">
+                    <p>Your weight:</p>
+                    <input id="weight" type="number" pattern="[0-9]*" name="a" placeholder="Enter your weight..." />
+                    <select id="weightUnit">
+                        <option value="kg">kg</option>
+                        <option value="pounds">lb</option>
+                    </select>
+                </div>
+                <div id="heightInput">
+                    <p>Your height:</p>
+                    <input id="height" type="number" pattern="[0-9]*" name="b" placeholder="Enter your height..." />
+                    <select id="heightUnit">
+                        <option value="cm">cm</option>
+                        <option value="feet">ft</option>
+                    </select>
+                </div>
+                <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+            </form>
+            <div id="results" class="text-center">Your BMI results will appear here</div>
+        </div>
+    </div>
+
+    <div id="glossary">
+        <h2>Good to know!</h2>
+        <p>Body Mass Index (BMI) is a person’s weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems, but it does not diagnose the body fatness or health of an individual.
+        </p>
+    </div>
+    <script src="../js/script.js" async defer></script>
+</body>
+</html>
